@@ -3,7 +3,6 @@
    Super High-End Mobile-First Design System
    ============================================ */
 
-/* Self-hosted Inter font for performance */
 @font-face {
   font-family: 'Inter';
   font-style: normal;
@@ -15,31 +14,7 @@
 @font-face {
   font-family: 'Inter';
   font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url('/Inter-Regular.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url('/Inter-Bold.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
   font-weight: 700;
-  font-display: swap;
-  src: url('/Inter-Bold.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 800;
   font-display: swap;
   src: url('/Inter-Bold.woff2') format('woff2');
 }
