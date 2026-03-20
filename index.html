@@ -5,27 +5,43 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DIGI | Pro Grade Attribution</title>
-  <meta name="description"
-    content="The new standard in ecosystem dominance. Holographic tracking, pure data, pure profit." />
-  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="The new standard in ecosystem dominance. Holographic tracking, pure data, pure profit." />
+  <meta name="theme-color" content="#050505" />
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://digi-attribution.com/" />
   <meta property="og:title" content="DIGI | Pro Grade Attribution" />
-  <meta property="og:description"
-    content="The new standard in ecosystem dominance. Holographic tracking, pure data, pure profit." />
+  <meta property="og:description" content="The new standard in ecosystem dominance. Holographic tracking, pure data, pure profit." />
   <meta property="og:image" content="https://digi-attribution.com/og-image.jpg" />
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image" />
   <meta property="twitter:url" content="https://digi-attribution.com/" />
   <meta property="twitter:title" content="DIGI | Pro Grade Attribution" />
-  <meta property="twitter:description"
-    content="The new standard in ecosystem dominance. Holographic tracking, pure data, pure profit." />
+  <meta property="twitter:description" content="The new standard in ecosystem dominance. Holographic tracking, pure data, pure profit." />
   <meta property="twitter:image" content="https://digi-attribution.com/og-image.jpg" />
 
+  <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+  <!-- Preconnect to critical origins -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Preload critical font -->
+  <link rel="preload" href="/Inter-Bold.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin />
+
+  <!-- Critical CSS - Inline for instant render -->
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{font-size:16px;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility}
+    html,body,#root{width:100%;height:100%;overscroll-behavior:none;background:#050505;color:#fff;font-family:Inter,-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;overflow:hidden}
+    @font-face{font-family:Inter;font-style:normal;font-weight:400;font-display:swap;src:url(/Inter-Regular.woff2) format('woff2')}
+    @font-face{font-family:Inter;font-style:normal;font-weight:700;font-display:swap;src:url(/Inter-Bold.woff2) format('woff2')}
+  </style>
+
+  <link rel="modulepreload" href="/src/main.tsx" />
 </head>
 
 <body>
