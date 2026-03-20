@@ -137,9 +137,10 @@ const GlassCard = ({ children, maxWidth = '500px' }: { children: React.ReactNode
 
     return (
         <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+            initial={{ opacity: 0, y: 40, filter: 'blur(15px)', scale: 0.98 }}
+            whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)', scale: 1 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 1.0, ease: [0.16, 1, 0.3, 1] }} 
             style={{
                 pointerEvents: 'auto',
                 background: 'linear-gradient(180deg, rgba(25,25,25,0.9) 0%, rgba(10,10,10,0.95) 100%)',
@@ -166,9 +167,10 @@ export const LandingPageUI = () => {
             {/* PAGE 1: HERO */}
             <Section align="center">
                 <motion.div
-                    initial={{ opacity: 0, y: 50 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 1, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
+                    initial={{ opacity: 0, y: 50, filter: 'blur(20px)', scale: 0.95 }}
+                    whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)', scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 1.2, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
                     style={{
                         pointerEvents: 'auto',
                         textAlign: 'center',
@@ -208,9 +210,10 @@ export const LandingPageUI = () => {
             {/* PAGE 2: WHITE MANIFESTO */}
             <Section align="center" theme="white">
                 <motion.div
-                    initial={{ opacity: 0, scale: 0.95 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+                    initial={{ opacity: 0, y: 60, filter: 'blur(25px)', scale: 0.9 }}
+                    whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)', scale: 1 }}
+                    viewport={{ once: true, margin: "-150px" }}
+                    transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
                     style={{ pointerEvents: 'auto', textAlign: 'center', padding: '0 1rem' }}
                 >
                     <h2 style={{
@@ -271,9 +274,10 @@ export const LandingPageUI = () => {
             {/* PAGE 4: WHITE DATA */}
             <Section align="left" theme="white">
                 <motion.div
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    transition={{ duration: 0.8 }}
+                    initial={{ opacity: 0, y: 50, filter: 'blur(20px)' }}
+                    whileInView={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+                    viewport={{ once: true, margin: "-100px" }}
+                    transition={{ duration: 1.0, ease: [0.16, 1, 0.3, 1] }}
                     style={{ pointerEvents: 'auto', maxWidth: isMobile ? '100%' : '80%' }}
                 >
                     <h2 style={{
@@ -308,9 +312,10 @@ export const LandingPageUI = () => {
             {/* PAGE 5: CTA */}
             <Section align="left">
                 <motion.div
-                    initial={{ opacity: 0, scale: 0.95 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+                    initial={{ opacity: 0, x: -50, filter: 'blur(20px)', scale: 0.95 }}
+                    whileInView={{ opacity: 1, x: 0, filter: 'blur(0px)', scale: 1 }}
+                    viewport={{ once: true, margin: "-100px" }}
+                    transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
                     style={{
                         pointerEvents: 'auto',
                         maxWidth: '600px',

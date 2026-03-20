@@ -19,12 +19,12 @@ function App() {
   const dpr: [number, number] = useMemo(() => [quality.dpr[0], quality.dpr[1]], [quality])
 
   const handleLoadingComplete = () => {
-    // The loading screen takes 1.5s to exit. 
+    // The loading screen takes 0.8s to exit. 
     // We transition the scene and scroll after this duration.
     setTimeout(() => {
       setIntro(false)
       setShowContent(true)
-    }, 1500)
+    }, 800)
   }
 
   const [isMobile, setIsMobile] = useState(false)
@@ -39,7 +39,7 @@ function App() {
 
   return (
     <ErrorBoundary fallback={<WebGLErrorFallback />}>
-      <LoadingScreen minimumDuration={4500} onComplete={handleLoadingComplete} />
+      <LoadingScreen minimumDuration={2000} onComplete={handleLoadingComplete} />
 
       <Canvas
         dpr={dpr}
@@ -67,7 +67,7 @@ function App() {
         <Suspense fallback={null}>
           <ScrollControls 
             pages={pages} 
-            damping={0.2} 
+            damping={0.15} // Tuned: fluid and premium without feeling sluggish
             style={{ scrollbarWidth: 'none' }} 
             enabled={!intro}
           >

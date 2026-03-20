@@ -6,7 +6,7 @@ interface LoadingScreenProps {
   onComplete?: () => void
 }
 
-export const LoadingScreen = ({ minimumDuration = 4500, onComplete }: LoadingScreenProps) => {
+export const LoadingScreen = ({ minimumDuration = 2000, onComplete }: LoadingScreenProps) => {
   const [isReady, setIsReady] = useState(false)
 
   useEffect(() => {
@@ -24,7 +24,7 @@ export const LoadingScreen = ({ minimumDuration = 4500, onComplete }: LoadingScr
         <motion.div
           initial={{ opacity: 1 }}
           exit={{ opacity: 0, scale: 1.05, filter: 'blur(20px)' }}
-          transition={{ duration: 1.5, ease: [0.25, 1, 0.5, 1] }}
+          transition={{ duration: 0.8, ease: [0.25, 1, 0.5, 1] }}
           style={{
             position: 'fixed',
             inset: 0,
@@ -41,7 +41,7 @@ export const LoadingScreen = ({ minimumDuration = 4500, onComplete }: LoadingScr
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 0.25, scale: 1 }}
-            transition={{ duration: 4, ease: 'easeOut' }}
+            transition={{ duration: 2, ease: 'easeOut' }}
             style={{
               position: 'absolute',
               width: '60vw',
@@ -58,7 +58,7 @@ export const LoadingScreen = ({ minimumDuration = 4500, onComplete }: LoadingScr
             <motion.div
               initial={{ opacity: 0, y: 15, filter: 'blur(10px)', scale: 0.95 }}
               animate={{ opacity: 1, y: 0, filter: 'blur(0px)', scale: 1 }}
-              transition={{ delay: 0.4, duration: 1.8, ease: [0.16, 1, 0.3, 1] }}
+              transition={{ delay: 0.2, duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
             >
               <h1 style={{
                 fontSize: 'clamp(4rem, 15vw, 12rem)',
@@ -87,7 +87,7 @@ export const LoadingScreen = ({ minimumDuration = 4500, onComplete }: LoadingScr
             <motion.div
               initial={{ scaleX: 0, opacity: 0 }}
               animate={{ scaleX: 1, opacity: 1 }}
-              transition={{ delay: 1.4, duration: 2, ease: [0.16, 1, 0.3, 1] }}
+              transition={{ delay: 0.6, duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
               style={{
                 width: '120%',
                 height: '1px',
@@ -100,7 +100,7 @@ export const LoadingScreen = ({ minimumDuration = 4500, onComplete }: LoadingScr
             <motion.div
               initial={{ opacity: 0, y: 10, filter: 'blur(5px)' }}
               animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
-              transition={{ delay: 1.8, duration: 1.5, ease: [0.16, 1, 0.3, 1] }}
+              transition={{ delay: 0.8, duration: 1.0, ease: [0.16, 1, 0.3, 1] }}
               style={{
                 marginTop: '1.5rem',
                 fontSize: 'clamp(0.7rem, 2vw, 0.9rem)',
