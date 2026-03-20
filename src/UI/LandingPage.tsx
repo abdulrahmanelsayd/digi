@@ -356,7 +356,7 @@ export const LandingPageUI = () => {
                 }}>
                     {/* COL 1: BRAND */}
                     <div>
-                        <h3 style={{ fontSize: 'clamp(1rem, 2.5vw, 1.2rem)', fontWeight: '800', margin: '0 0 1rem 0', letterSpacing: '-0.02em' }}>EMO</h3>
+                        <h3 style={{ fontSize: 'clamp(1rem, 2.5vw, 1.2rem)', fontWeight: '800', margin: '0 0 1rem 0', letterSpacing: '-0.02em' }}>DIGI</h3>
                         <p style={{ opacity: 0.4, fontSize: 'clamp(0.8rem, 2vw, 0.85rem)', lineHeight: 1.6, maxWidth: '200px' }}>
                             Redefining digital attribution.
                         </p>
@@ -427,7 +427,7 @@ export const LandingPageUI = () => {
                     gap: '1rem',
                     paddingBottom: 'max(1rem, env(safe-area-inset-bottom, 0px))'
                 }}>
-                    <div>© 2026 EMO INC.</div>
+                    <div>© 2026 DIGI INC.</div>
                     <div style={{ display: 'flex', gap: '1.5rem' }}>
                         <span>PRIVACY POLICY</span>
                         <span>TERMS OF SERVICE</span>

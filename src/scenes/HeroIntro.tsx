@@ -12,7 +12,7 @@ function VideoText(props: any) {
     const texture = useVideoTexture('/drei.mp4', { loop: true, muted: true, start: true, crossOrigin: 'Anonymous' })
     return (
         <Text font="/Inter-Bold.woff" fontSize={3} letterSpacing={-0.06} {...props}>
-            emo
+            digi
             <meshBasicMaterial toneMapped={false} map={texture} />
         </Text>
     )
